@@ -9,18 +9,42 @@ that will provide an unmatched test of whether dark energy or modified gravity i
 In the next decade, SNe~Ia will be used as peculiar-velocity probes to measure  the influence of gravity on structure formation within the Universe.
 Peculiar velocities induce scatter along the redshift axis of the SN Hubble diagram, which is
 pronounced at low redshifts and when the magnitude scatter (e.g.\ due to intrinsic magnitude dispersion) is small.
-The peculiar velocity power spectrum is sensitive to the growth of structure as $P_{vv}\propto (fD)^2$, where $D$ is  the spatially-independent
-``growth factor'' in the linear evolution of density perturbations and
-$f \equiv \frac{d\ln{D}}{d\ln{a}}$ is the linear growth rate where $a$ is the scale factor  \citep{2006PhRvD..73l3526H,2011ApJ...741...67D}.
-The combination $fD$ evolves with redshift;
-%\footnote{
-%To be precise, the peculiar
-%velocity power spectrum also depends on the Hubble parameter as $P_{vv}\propto (HfD)^2$.  A supernova  survey  measures luminosity distance fluctuations
-%$\delta_{d_L} = (d_L- \bar{d}_L(z))/\bar{d}_L(z)$, where $d_L$ and  $\bar{d}_L(z)$ are the measured and expected distances at the observed redshift $z$.
-%To first order in peculiar velocity along the line of sight $v$, $\delta_{d_L} =  v \left(1-\frac{1}{H\bar{d}_L(z)}\right) \approx -\frac{v}{H\bar{d}_L(z)}$
-%at low redshift.   The $H$-dependences of  $P_{vv}$ and the conversion from distances to velocities cancel, making  peculiar velocity surveys sensitive to $(fD)^2$.
-%}
-the $\Lambda$CDM prediction for the $z=0$ peculiar velocity power spectrum is shown in Figure~\ref{power:fig}.
+The conservation of mass relates peculiar velocities  with mass overdensities in the same volume through the continuity equation
+$Haf\delta(\mathbf{x}) + \nabla \cdot \mathbf{v}(\mathbf{x}) =0$ where the linear growth rate $f \equiv \frac{d\ln{D}}{d\ln{a}}$, $a$ is the scale factor, and $D$ is  the spatially-independent
+``growth factor''.
+Though the fields are not directly comparable, the power spectra in different volumes are such that
+the peculiar velocity power spectrum and the overdensity power spectrum at the surface of last scattering are related by
+$P_{vv}\propto (fD)^2P_{\delta \delta}(z_{\text{CMB}})$  \citep{2006PhRvD..73l3526H,2011ApJ...741...67D}. 
+The $\Lambda$CDM prediction for the $z=0$ peculiar velocity power spectrum given CMB data is shown in Figure~\ref{power:fig}.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{/Users/akim/project/PeculiarVelocity/doc/src/new2.png}
+%\includegraphics[width=0.5\textwidth]{../outcosmo/zmax_.png}
+\caption{Dimensionless peculiar velocity power spectrum $k^3P_{vv}(z=0)$ for $\mu \equiv \cos{(\hat{k} \cdot \hat{r})}=1, 0.5$ (magenta, cyan) 
+where $\hat{r}$ is the line of sight, as predicted for General Relativity in the linear regime.
+Overplotted are peculiar-velocity power-spectrum shot noise  (diagonal lines) for various observing parameters.  Red shows the shot noise expected from a 2-year LSST survey
+while black shows a 10-year LSST survey.  The dotted and dashed lines indicate the assumed intrinsic magnitude dispersion, using 0.08 (dashed) or 0.15 mag (dotted).  The expected shot
+noise from TAIPAN is shown in green (dash-dotted). 
+%
+%Overplotted are volume-weighted peculiar velocity shot-noise  $k^3\sigma^2/n$ at $z=0.1$ expected from 2- and 10-year (red, black) supernova densities, 0.08 and 0.15~mag (dashed, dotted) intrinsic magnitude dispersions, and TAIPAN (green, dash-dotted).
+The bottom solid grey horizontal lines show the approximate range of $k$ expected to be used in surveys with corresponding
+redshift depths $z_{\rm max}$.
+\label{power:fig}}
+\end{figure}
+
+
+%The bias is a ``nuisance'' parameter, not present in the velocity power spectrum, which must marginalized out when inferring $\gamma$.
+%The same field is responsible for both overdensities and velocities so when combined in a common analysis the sample variance limit is lowered.
+
+Galaxy surveys complement peculiar-velocity surveys.  As alluded to earlier,
+comparing a peculiar velocity survey with an overlapping galaxy survey provides a measure of $f/b$, where $b$ is the galaxy bias.
+In addition, Redshift Space Distortions in the galaxy survey measure growth through  $P_{\delta \delta }\propto (bD + fD\mu^2)^2P_{\delta \delta}(z_{\text{CMB}})$,
+where $\mu\equiv \cos{(\hat{k} \cdot \hat{r})}$ where $\hat{r}$ is the direction of
+the line of sight.
+A single SN~Ia peculiar-velocity survey, whose SN search maps SN overdensities, thus gives three measures of growth, though the large number density
+of galaxies relative to decades worth of SNe means that better constraints are possible using an independent galaxy survey.
 
 The  growth of structure depends on gravity;
 \citet{PhysRevD.72.043529,2007APh....28..481L} find that General Relativity, $f(R)$,  and DGP gravity follow the relation
@@ -38,28 +62,6 @@ in Figure~2 of  \citet{1475-7516-2013-04-031}.
 %overall amplitude of  overdensities, so the standard parameterization used by the community is $f\sigma_8$.}
 
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.6\textwidth]{/Users/akim/project/PeculiarVelocity/doc/src/new2.png}
-%\includegraphics[width=0.5\textwidth]{../outcosmo/zmax_.png}
-\caption{Dimensionless peculiar velocity power spectrum $k^3P_{vv}(z=0)$ for $\mu \equiv \cos{(\hat{k} \cdot \hat{r})}=1, 0.5$ (magenta, cyan) 
-where $\hat{r}$ is the line of sight, as predicted for General Relativity in the linear regime.
-Overplotted are peculiar-velocity power-spectrum shot noise  (diagonal lines) for various observing parameters.  Red shows the shot noise expected from a 2-year LSST survey
-while black shows a 10-year LSST survey.  The dotted and dashed lines indicate the assumed intrinsic magnitude dispersion, using 0.08 (dashed) or 0.15 mag (dotted).  The expected shot
-noise from TAIPAN is shown in green (dash-dotted). 
-%
-%Overplotted are volume-weighted peculiar velocity shot-noise  $k^3\sigma^2/n$ at $z=0.1$ expected from 2- and 10-year (red, black) supernova densities, 0.08 and 0.15~mag (dashed, dotted) intrinsic magnitude dispersions, and TAIPAN (green, dash-dotted).
-The bottom solid grey horizontal lines show the approximate range of $k$ expected to be used in surveys with corresponding
-redshift depths $z_{\rm max}$.
-\label{power:fig}}
-\end{figure}
-
-The same SNe~Ia used  to measure peculiar velocities can also serve as tracers of mass overdensities.  Overdensities and their motions are connected by the
-continuity equation, so the SN-overdensity power spectrum also depends on gravity 
-as $P_{\delta \delta }\propto (bD + fD\mu^2)^2$ where $b$ is the SN bias and $\mu\equiv \cos{(\hat{k} \cdot \hat{r})}$ where $\hat{r}$ is the direction of
-the line of sight.  
-The bias is a ``nuisance'' parameter, not present in the velocity power spectrum, which must marginalized out when inferring $\gamma$.
-The same field is responsible for both overdensities and velocities so when combined in a common analysis the sample variance limit is lowered.
 
 
 A SN~Ia peculiar velocity survey is composed of several components:
