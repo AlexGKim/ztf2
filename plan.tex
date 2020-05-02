@@ -4,33 +4,54 @@ show the power of peculiar velocities surveys at low redshift.
 This  tracer provides an unmatched  new window with which to test gravity and the source of the accelerating expansion of the Universe.
 We propose the following course of research for the upcoming decade.
 
-\subsection{Present}
+\subsection{SNfactory}
 The current goals are to provide a proof of concept of a SN peculiar velocity survey while developing domain
 expertise and pipelines that can be used in future experiments.
 
-Kim has developed a SNFactory/ZTF peculiar-velocity analysis framework with a postdoc.  Its distinguishing features is that it is likelihood-based
+Kim has developed a SNFactory/ZTF peculiar-velocity analysis framework with Graziani.  Its distinguishing features is that it is likelihood-based
 including both density and peculiar velocities.  The complexity of including fitting the underlying mass density field in the model
 is addressed through Hamiltonian Monte Carlo.  Analytic expressions for the partial derivatives of the likelihood are coded,
-avoiding the computational limitations of {\it autodiff} in STAN.  A end-to-end implementation is complete, validation of it is ongoing.
+avoiding the computational limitations of {\it autodiff} in STAN.  A end-to-end implementation is complete
+and a draft methodologies paper is expected within a week.
 
-The first application o the analysis pipeline will be for SNFactory supernovae.  A next analysis will be of ZTF-discovered 
-SNe when those data are ready.  The plan is for a  subset of the required data, precision redshifts of SN host galaxies, to be provided
-by DESI.  Additional DESI data contributions are being discussed.
+
+This work is done in collaboration with French IN2P3 colleagues.
 
 \subsection{Near Term: DESI as TAIPAN-North}
 
-There has been talk of using BGS for a peculiar-velocity survey.  There is some question as to how deep the BGS achieves.  This should be
-dug into.
+DESI offers the possibility of a compelling Peculiar Velocity Survey,  DESI's northern hemisphere coverage complements 
+the TAIPAN and WALLABY souther surveys.   Its technical capabilities far exceed those of TAIPAN.  While a PV-specific
+survey is feasible with the instrument, we are examining how much can be done within the Bright Galaxy Survey (BGS).
 
-\subsection{Near Term: ZTF2 + DESI}
-A near-term peculiar velocity program can already provide the most competitive measurements of $\gamma$ at low redshift.  Engaging in science
-now positions LBL for domain leadership in the LSST era.  For its near-term peculiar-velocity program, we advocate a survey using SN~Ia discoveries from ZTF2,
-rather than other possible surveys, for the following reasons:
+The BGS targets objects to a fainter magnitude limit than TAIPAN.  However, the DESI $S/N$ and single visits are a point of concern.
+Indeed, previous surveys have found that per-observation systematic errors in measured velocity dispersion are the limiting
+source of error.  For this reason, TAIPAN revisits each Fundamental Plane galaxy several times to $\sqrt{N}$-reduce this error.
+Kim is working with a PV subgroup within DESI to determine the statistical error in velocity dispersion from BGS observations.
+We are requesting multiple visits of the same source during SV to quantify any extra variance that appears in
+the dispersion measurement.
+
+While the tall pole is in the dispersion measurement, the
+imaging component is well in hand. Kim has worked with DESI-colleague Parkinson to find that DESI Legacy Imaging Surveys DR8  perform
+as well as previous releases to measuring galaxy surface brightnesses and angular sizes, and have identified new
+pixel-level reductions that could further increase the performance.
+
+This work is done within the DESI collaboration, mostly with Howlett and Parkinson.  Blake and Davis are interested as well.
+
+\subsection{Near Term: ZTF, ZTF2 + DESI}
+As mentioned earlier, we are working with IN2P3 colleagues on an analysis of SNFactory supernovae.
+These same people are members of the ZTF partnership and they also plan an analysis of ZTF-discovered 
+SNe when those data are ready.  The redshift precision obtained by ZTF's SEDMachine is poor enough
+to adversely affect peculiar velocity measurements.  As such, we have been in working with our DESY/Humboldt University
+colleagues on an external collaboration agreement with DESI who would provide a precision redshift of ZTF transient hosts,
+the vast majority are already targets of the BGS survey.
+
+ZTF is soon concluding and LBL advocates ZTF2 as the source of SNe for a near-term peculiar-velocity program
+for the following reasons:
 \begin{itemize}
 \item A peculiar-velocity survey is already being touted as a primary science driver. As such,
 the observing strategy should accommodate our needs.
 \item It would be ready to start at the end of ZTF in 2021.
-\item It is cheap, with a cost ranging from zero to access public data, to an amount (\$300k?) smaller
+\item It is cheap, with a cost ranging from zero to access public data, to an amount (\$200k/yr) smaller
 than building a new facility.
 \item ZTF2 includes SEDMachine for classification of $m<18.5$~mag  transients.
 \item It is in the Northern Hemisphere, which complements and is not superseded by LSST. 
@@ -84,8 +105,8 @@ what ZTF2 photometry can do alone.
 
 ZTF2 will have public, private collaboration, and CalTech surveys.    In ZTF,
 the private time was used to survey in the $i$-band (supplementing the $g$ and $r$-bands of the public survey), that turns out to be useful in transient classification and SN~Ia distance determination.
-Nevertheless, we should monitor whether the public data is sufficient for our needs.  It could be that we do not need to buy into ZTF2 in order to have
-a ZTF2-discovery peculiar velocity survey.  (Input from current ZTF folks should be solicited.)
+%Nevertheless, we should monitor whether the public data is sufficient for our needs.  It could be that we do not need to buy into ZTF2 in order to have
+%a ZTF2-discovery peculiar velocity survey.  (Input from current ZTF folks should be solicited.)
 
 Plan A: Use public data only.  ZTF-II public should provide discoveries and classifications of $z<0.09$ efficiently.  It will provide SEDMachine spectra for a
 fraction of the bright objects.  Its two-band photometry will not provide good distances.  SNIFS can follow-up a subset of these at peak brightness.
