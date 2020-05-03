@@ -58,14 +58,44 @@ There are several classes of follow-up we have identified:
 \item Spectrophotometry around peak brightness.  Spectrophotometry is expected to give 0.08~mag distance modulus uncertainties compared
 to the 0.12~mag uncertainties of a private ZTF or good WFD LSST photometry.  Spectrophotometry increases the power
 of a single supernova by $\times 2.25$ while also getting a host redshift.
-
+\begin{itemize}
+\item SN Ia Classification -- SNIFS can supplement SED Machine to go toward 100\% SN~Ia classifications
+while going deeper than the nominal $18.5$~mag limit of SED Machine.
+\item Host-galaxy redshift.
+\item SN Ia Distance -- SNIFS has already been used to standardize SNe~Ia magnitudes to $\sigma_M=0.08$~mag.  SNIFS observations will be
+designed to obtain this precision.  This SN subset  will have relatively smaller peculiar-velocity uncertainties relative to 
+those with only ZTF2 photometry.  The SNIFS IFU provides local host-galaxy properties, which may also improve SN distance precisions.
+\end{itemize}
 SNIFS at the UH-88 is an existing instrument that could do the job and Greg is communicating with UH about
 a robotized upgrade to follow-up ZTF discoveries.
 Alex submitted a proposal to instrument the CAHA 2m with
 an IFU to follow ZTF discoveries.  French IN2P3 Colleagues are interested in installing a MUSE clone on the VST.
 We need to identify opportunities at telescopes that we can instrument with  IFU spectrographs
 built by LBL and most likely collaborators in Lyon and Paris who have expertise.
-\item IR phtometry.
+
+The University of Hawaii must allocate time and resources into the program.  There is already UH expertise in supernovae and peculiar velocities and an existing relationship
+with LBL.
+
+\item DESI can provide the following components to supplement surveys:
+\begin{itemize}
+\item Discovery Screening -- Provides redshifts for probable host galaxies of new transients, for use in early classification.  A host galaxy may
+already have a DESI redshift, may be a BGS target without a redshift but whose observation could be prioritized,  or non-DESI target for which we
+make a secondary-target fiber allocation.
+\item SN Ia Classification -- Spectroscopy of active transients  through secondary-target fiber allocations within
+DESI survey pointings. There
+will be $\sim 1$ active $r<21.5$ SN~Ia in every three DESI pointings.  Coordinating DESI pointings such that ``every'' pointing contains
+a  ZTF2 discovery can significantly increase the number of classifications, relative to the random (from the transient perspective) default DESI pointings.
+Triggered observations of non-DESI pointings is possible, though does not take advantage of DESI multiplexing.
+\item Host-galaxy redshift -- Mopping up missing host-galaxy redshifts
+can be done efficiently with a single sweep of DESI's MOS.
+\end{itemize}
+ The $R>2000$ resolution
+provides sufficiently precise redshifts so as to make their uncertainties negligible in the $\gamma$ error budget.
+\item NIR -- Something through UH?
+\begin{itemize}
+\item SN Ia Distance -- NIR observations are designed to get $\sigma_M=0.08$~mag.  These SNe will be more sensitive probes of velocity
+than those with only ZTF2 photometry.
+\end{itemize}
 \item Optical imaging.  LSST may choose a WFD strategy that while discovering SNe~Ia, provide so little data on them
 as to render them useless.  Even if LSST does have a good observing strategy, the closest SNe~Ia that we are interested in
 will saturate the LSST Camera.  Depending on the circumstances,
@@ -93,41 +123,7 @@ precisions of $\sigma_M =0.12$~mag, which allow good velocity measurements with 
 There are other SN searches that do not achieve this depth.
 \end{itemize}
 
-ZTF2 SN~Ia discoveries are combined with data from other facilities to form a complete PV program.  We propose:
-\begin{itemize}
-\item DESI will provide the following components of the survey:
-\begin{itemize}
-\item Discovery Screening -- Provides redshifts for probable host galaxies of new transients, for use in early classification.  A host galaxy may
-already have a DESI redshift, may be a BGS target without a redshift but whose observation could be prioritized,  or non-DESI target for which we
-make a secondary-target fiber allocation.
-\item SN Ia Classification -- Spectroscopy of active transients  through secondary-target fiber allocations within
-DESI survey pointings. There
-will be $\sim 1$ active $r<21.5$ SN~Ia in every three DESI pointings.  Coordinating DESI pointings such that ``every'' pointing contains
-a  ZTF2 discovery can significantly increase the number of classifications, relative to the random (from the transient perspective) default DESI pointings.
-Triggered observations of non-DESI pointings is possible, though does not take advantage of DESI multiplexing.
-\item Host-galaxy redshift -- Some precise galaxy redshifts may not be available at the end of the ZTF2 survey.  Mopping up of ZTF2 host-galaxy redshifts
-can be done efficiently with a single sweep of DESI's MOS.
-\end{itemize}
- The $R>2000$ resolution
-provides sufficiently precise redshifts so as to make their uncertainties negligible in the $\gamma$ error budget.
-Its BGS targets  will host a large fraction of ZTF2-discovered SNe~Ia.
-\item SNIFS at the UH-88 is used to spectroscopically observe a subset of active likely-SN~Ia transients.  SNIFS provides simultaneously
-\begin{itemize}
-\item SN Ia Classification -- SNIFS can supplement SED Machine to go toward 100\% SN~Ia classifications
-while going deeper than the nominal $18.5$~mag limit of SED Machine.
-\item Host-galaxy redshift.
-\item SN Ia Distance -- SNIFS has already been used to standardize SNe~Ia magnitudes to $\sigma_M=0.08$~mag.  SNIFS observations will be
-designed to obtain this precision.  This SN subset  will have relatively smaller peculiar-velocity uncertainties relative to 
-those with only ZTF2 photometry.  The SNIFS IFU provides local host-galaxy properties, which may also improve SN distance precisions.
-\end{itemize}
-The University of Hawaii must allocate time and resources into the program.  There is already UH expertise in supernovae and peculiar velocities and an existing relationship
-with LBL.
-\item NIR -- Something through UH?
-\begin{itemize}
-\item SN Ia Distance -- NIR observations are designed to get $\sigma_M=0.08$~mag.  These SNe will be more sensitive probes of velocity
-than those with only ZTF2 photometry.
-\end{itemize}
-\end{itemize}
+ZTF2 SN~Ia discoveries are combined with data from other facilities, as described above, to form a complete PV program.  
 The active SN spectrophotometric and NIR follow-up provide significant distances estimates over
 what ZTF2 photometry can do alone.
 
