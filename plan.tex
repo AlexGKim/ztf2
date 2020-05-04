@@ -19,66 +19,94 @@ This work is done as part of the SNfactory and specifically with French IN2P3 co
 
 \subsection{DESI as TAIPAN-North}
 
-DESI offers the possibility of a compelling Peculiar Velocity Survey,  DESI's northern hemisphere coverage complements 
-the TAIPAN and WALLABY souther surveys.   Its technical capabilities far exceed those of TAIPAN.  While a PV-specific
-survey is feasible with the instrument, we are examining how much can be done within the Bright Galaxy Survey (BGS).
+DESI has the potential to perform a compelling Peculiar Velocity Survey.  Its northern hemisphere coverage complements 
+the TAIPAN and WALLABY southern surveys.   Its technical capabilities far exceed those of TAIPAN.  While ideally a PV-optimized
+survey with the instrument would be preferred, we are examining how much can be done within the Bright Galaxy Survey (BGS).
 
 The BGS targets objects to a fainter magnitude limit than TAIPAN.  However, the DESI $S/N$ and single visits are a point of concern.
-Indeed, previous surveys have found that per-observation systematic errors in measured velocity dispersion are the limiting
-source of error.  For this reason, TAIPAN revisits each Fundamental Plane galaxy several times to $\sqrt{N}$-reduce this error.
+Indeed, previous Fundamental Plane surveys have found that per-observation systematic errors in measured velocity dispersion are the limiting
+source of error.  For this reason, TAIPAN revisits each Fundamental Plane galaxy several times to $\sqrt{N}$-suppress this error.
 Kim is working with a PV subgroup within DESI to determine the statistical error in velocity dispersion from BGS observations.
-We are requesting multiple visits of the same source during SV to quantify any extra variance that appears in
+We are would like multiple visits of the same source during SV to quantify any extra variance that appears in
 the dispersion measurement.
 
-While the tall pole is in the dispersion measurement, the
-imaging component is well in hand. Kim has worked with DESI-colleague Parkinson to find that DESI Legacy Imaging Surveys DR8  perform
-as well as previous releases to measuring galaxy surface brightnesses and angular sizes, and have identified new
+While the tall pole is the velocity-dispersion measurement, the
+imaging component is well in hand. Kim has worked with DESI-colleague Parkinson to find that DESI Legacy Imaging Surveys DR8  performs
+as well as currently-used releases in measuring galaxy surface brightnesses and angular sizes, and have identified new Tractor
+per-band
 pixel-level reductions that could further increase the performance.
 
 This work is done within the DESI collaboration, mostly with Howlett and Parkinson.  Blake and Davis are interested as well.
 
 \subsection{DESI getting redshifts for SN~Ia PV with ZTF, ZTF-II}
 The redshift precision obtained by ZTF's SEDMachine is poor enough
-to adversely affect peculiar velocity measurements.  As such, we have been in working with our DESY/Humboldt University
-colleagues on an external collaboration agreement with DESI who would provide a precision redshift of ZTF transient hosts,
-the vast majority are already targets of the BGS survey. 
+to adversely affect peculiar velocity measurements.  In addition, pre-existing host-galaxy redshifts
+ aid in the classification of transients.  As such, we have been in working with our DESY/Humboldt University
+colleagues on an external collaboration agreement with DESI, who would provide a precision redshift of ZTF transient hosts,
+the vast majority are already targets of the BGS survey.   DESI members would gain access to ZTF Partnership
+SN~Ia light curves.
 
 This work has been done through the DESI Time Domain Working Group.
+A collaboration agreement between DESI and ZTF-II is also possible though it won't be initiated until there is a ZTF-II Partnership.
 
-A collaboration agreement between DESI and ZTF-II is also possible though won't be initiated until there is a ZTF-II Partnership.
-
-\subsection{SN~Ia Follow-up Network}
+\subsection{SN~Ia Follow-up Network of ZTF-II, LSST, and Other Sources of SN Discovery}
 In the future, ZTF-II and LSST will provide public nearby SN discoveries and photometry and in the case of ZTF-II some spectroscopy.
-The ability to determine accurate from these public data varies.  ZTF-II public $gr$ photometry only will not give precise distances.
-It is possible that SEDMachine can, but only a small fraction of public data will be available.
-The LSST WFD survey observing strategy is yet to be specified.  All surveys considered give complete discovery out to $z=0.3$, but
-they vary widely on their ability to yield accurate distances or early classification.  Either way, none of these public data
-(nor any of the private) will provide the precision that spectrophotometry can.  For this reason, LBL's primary interest
-is in developing a follow-up network in both the Northern and Southern hemispheres.
+The ability to determine accurate from these public data varies.  ZTF-II public $gr$ photometry itself will not give precise distances.
+SEDMachine can provide classifications and perhaps precise distances, but only a small fraction of SNe will have public data.
+ZTF-II lacks precision redshifts .
+The LSST WFD survey observing strategy is yet to be specified.  All strategies considered give complete discovery out to $z=0.3$, but
+they vary widely on their ability to yield accurate distances or early classification.  LSST provides no spectroscopy. Either way, none of these public data
+(nor any of the ZTF-II private) will provide the precision that spectrophotometry can.  For this reason, LBL's primary interest
+is in developing a follow-up network covering the sky of both northern and southern hemisphere searches.
 
 There are several classes of follow-up we have identified:
 \begin{itemize}
 \item Spectrophotometry around peak brightness.  Spectrophotometry is expected to give 0.08~mag distance modulus uncertainties compared
-to the 0.12~mag uncertainties of a private ZTF or good WFD LSST photometry.  Spectrophotometry increases the power
+to the 0.12~mag uncertainties of a private ZTF or good-survey-strategy WFD LSST photometry.  Spectrophotometry increases the power
 of a single supernova by $\times 2.25$ while also getting a host redshift.
 \begin{itemize}
 \item SN Ia Classification -- SNIFS can supplement SED Machine to go toward 100\% SN~Ia classifications
 while going deeper than the nominal $18.5$~mag limit of SED Machine.
 \item Host-galaxy redshift.
-\item SN Ia Distance -- SNIFS has already been used to standardize SNe~Ia magnitudes to $\sigma_M=0.08$~mag.  SNIFS observations will be
+\item SN Ia Distance -- SNIFS has already been used to standardize SNfactory SNe~Ia magnitudes to $\sigma_M=0.08$~mag.  SNIFS follow-up
+of ZTF-II and LSST will be
 designed to obtain this precision.  This SN subset  will have relatively smaller peculiar-velocity uncertainties relative to 
-those with only ZTF2 photometry.  The SNIFS IFU provides local host-galaxy properties, which may also improve SN distance precisions.
+those with only photometry.  The SNIFS IFU provides local host-galaxy properties, which may also improve SN distance precisions.
 \end{itemize}
-SNIFS at the UH-88 is an existing instrument that could do the job and Greg is communicating with UH about
-a robotized upgrade to follow-up ZTF discoveries.
-Alex submitted a proposal to instrument the CAHA 2m with
-an IFU to follow ZTF discoveries.  French IN2P3 Colleagues are interested in installing a MUSE clone on the VST.
-We need to identify opportunities at telescopes that we can instrument with  IFU spectrographs
-built by LBL and most likely collaborators in Lyon and Paris who have expertise.
 
-The University of Hawaii must allocate time and resources into the program.  There is already UH expertise in supernovae and peculiar velocities and an existing relationship
+In the above 
+SNIFS at the UH-88 is called out as an existing instrument that could do the job and Greg is communicating with UH about
+a robotized upgrade to follow-up ZTF discoveries.  The University of Hawaii must allocate time and resources into the program.  There is already UH expertise in supernovae and peculiar velocities and an existing relationship
 with LBL.
 
+We estimate that 2 or 3 dedicated 2m telescopes instrumented with similar IFUs could provide
+complete followup of $z<0.09$ discoveries in concurrent northern and southern searches.
+We submitted a proposal to instrument the CAHA 2m with
+an IFU to follow ZTF discoveries.  IN2P3 Colleagues are interested in installing a MUSE clone on the VST.
+
+LBL should actively be
+\begin{itemize}
+\item Developing its ability to design and build IFU spectrographs.  We can leverage the expertise used to design the DESI spectrographs.
+There are several IFU technologies.  LBL/SSL experience with fibers makes a lens-array fiber-bundle IFU a natural technology to develop
+internally.
+Alternatively, Marseille and Lyon colleagues have expertise in the other IFU technologies, image slicer and lenslet arrays,
+\item We need to identify available telescopes that we can instrument with  IFU spectrographs
+built by LBL and collaborators.
+\end{itemize}
+\item Optical imaging.  LSST may choose a WFD strategy that while discovering SNe~Ia, provide so little data on them
+as to render them useless.  Even if LSST does have a good observing strategy, the closest SNe~Ia that we are interested in
+will saturate the LSST Camera. 
+
+The needed imaging depends on the selected WDF strategy and the amount of spectrophotometry
+we get.  An extreme case occurs when early classification is not possible with LSST.  Then a
+``ZTF-South'' instrument capable of SN discovery early in their evolution and not saturating is needed.
+Greg and Peter think that a 1m-class Schmidts would be necessary.  We have not identified such a telescope
+that fits the bill.
+
+If only a small number of supplemental observations are necessary of low surface density targets, a smaller FOV camera would suffice.
+
+\item NIR data, like spectrophotometry, have been used to get $\sigma_M=0.08$~mag. UH and Carnegie colleagues have been interested
+in this.  Perhaps LBL has a spare SNAP HgCdTe sitting around that can be used for this.
 \item DESI can provide the following components to supplement surveys:
 \begin{itemize}
 \item Discovery Screening -- Provides redshifts for probable host galaxies of new transients, for use in early classification.  A host galaxy may
@@ -94,26 +122,23 @@ can be done efficiently with a single sweep of DESI's MOS.
 \end{itemize}
  The $R>2000$ resolution
 provides sufficiently precise redshifts so as to make their uncertainties negligible in the $\gamma$ error budget.
-\item NIR -- Something through UH?
-\begin{itemize}
-\item SN Ia Distance -- NIR observations are designed to get $\sigma_M=0.08$~mag.  These SNe will be more sensitive probes of velocity
-than those with only ZTF2 photometry.
-\end{itemize}
-\item Optical imaging.  LSST may choose a WFD strategy that while discovering SNe~Ia, provide so little data on them
-as to render them useless.  Even if LSST does have a good observing strategy, the closest SNe~Ia that we are interested in
-will saturate the LSST Camera.  Depending on the circumstances,
-a ``ZTF-South'' instrument capable of SN discovery early in their evolution and not saturating is an option.
 
-Identify 1m-class Schmidts that are available.
 \end{itemize}
 
-\subsection{ZTF-II}
+LBL, through the project, would support a broad community interested in peculiar velocities. 
+There are interested groups at the  University of Hawaii, the University of Michigan, the University of Pittsburgh, the University of Rochester, Yale University,  Brookhaven National Laboratory,
+the Carnegie Observatories, several IN2P3 labs, Humboldt University, the University of Toronto,  the University of Queensland, African Institute for Mathematical
+Sciences.
+There is expressed interest from South Africa and Australia in using their resources for peculiar-velocity follow-up observations.
 
-ZTF is soon concluding and LBL advocates ZTF-II as the source of SNe for a near-term peculiar-velocity program
+\subsection{ZTF-II Partnership}
+
+ZTF is soon concluding.  LBL plans to use public ZTF-II discoveries as the source of SNe for a near-term peculiar-velocity program.
+There are advantages to being members of the partnership.
 for the following reasons:
 \begin{itemize}
-\item A peculiar-velocity survey is already being touted as a primary science driver. As such,
-the observing strategy should accommodate our needs.
+\item Being a partner brings a voice as to how partnership ZTF and SNM time are to be used.  
+A peculiar-velocity survey is already being touted as a primary science driver, and we can push for it.
 \item It would be ready to start Fall 2020.
 \item It is cheap, with a cost ranging from zero to access public data, to an amount (\$200k/yr) smaller
 than building a new facility.
@@ -126,15 +151,15 @@ precisions of $\sigma_M =0.12$~mag, which allow good velocity measurements with 
 There are other SN searches that do not achieve this depth.
 \end{itemize}
 
-ZTF2 SN~Ia discoveries are combined with data from other facilities, as described above, to form a complete PV program.  
+ZTF2 SN~Ia discoveries and pubic/partnership data can be supplemented  with data from other facilities, as described above, to form a complete PV program.  
 The active SN spectrophotometric and NIR follow-up provide significant distances estimates over
 what ZTF2 photometry can do alone.
 
+I think (?!) the expectation would be that the science would be run through the partnership.  Value-added data would be shared with other ZTF-II
+partners interested in the same science.
 
-
-
-ZTF2 will have public, private collaboration, and CalTech surveys.    In ZTF,
-the private time was used to survey in the $i$-band (supplementing the $g$ and $r$-bands of the public survey), that turns out to be useful in transient classification and SN~Ia distance determination.
+%ZTF2 will have public, private collaboration, and CalTech surveys.    In ZTF,
+%the private time was used to survey in the $i$-band (supplementing the $g$ and $r$-bands of the public survey), that turns out to be useful in transient classification and SN~Ia distance determination.
 %Nevertheless, we should monitor whether the public data is sufficient for our needs.  It could be that we do not need to buy into ZTF2 in order to have
 %a ZTF2-discovery peculiar velocity survey.  (Input from current ZTF folks should be solicited.)
 
@@ -142,32 +167,27 @@ Option A: Do not join the partnership and use ZTF-II public data.
 ZTF-II public should provide discoveries and classifications of $z<0.09$ efficiently.  SEDMachine spectra for a
 fraction of the bright objects.  Public pixels will be available in two months.
 The pro is that the discoveries are free.
-Cons are  that to be competitive we nonetheless need to get more external data to make up for the ZTF-II private data
-we don't get as ZTF-II two-band photometry will not provide good distances.  
+Cons are  that to be competitive we nonetheless need to get more external data to make up for the lack of (competing) partnership data
+we don't get.  
 Either way precise redshifts have to come from somewhere.
 
 
+Option B: Join the ZTF-II partnership.
 Private buy-in probably gives slightly more solid-angle, $i$ photometry, and more SEDMachine spectra.  With the third band distance precisions are expected
-to be usable for PV, though not as good as with spectra at maximum.  It gives a say as to how to steer partnership time, though there is no guarantee that
+to be usable for PV, though not as good as with spectra at maximum.  This is a low-risk option to give reasonable science.
+It gives a say as to how to steer partnership time, though there is no guarantee that
 you can generate a majority.
 
-The overall assessment is that buy-in would be nice as a second but not first priority.
+Option C: Side-door entry through DESI.  Early DESI host redshifts and ZTF-II discovery follow-up of interest to ZTF-II.
 
-\subsection{Long Term: LSST +}
+\subsection{LSST +}
 The DESC SN~Ia Working Group is interested in peculiar velocity science.  There is an official peculiar-velocity project.  A peculiar-velocity
 metric was included in the DESC response to the Project call for white papers on observing strategies.
 Informal meetings have been held by DESC members.
+Building a community via DESC is a natural way to socialize the need for a follow-up work network through DOE and perhaps
+IN2P3.
 
-The nominal LSST observing strategy will efficiently discover SNe~Ia at $z<0.3$.  However, its poor temporal sampling will not provide accurate
-distances nor early classification of SNe~Ia near maximum light.  Our French colleagues have identified a different strategy that will provide
-decent sampling that give accurate distances and classifications.  LBL's approach varies depends on whether the Project adopts an acceptable
-WDF observing strategy.  A systemic problem is the saturation of nearby SNe around peak brightness.
-
-If it does not, we can either run a ``ZTF South'' that is coordinated with LSST, or the surface density is low enough that we could take
-a targeted approach.  The combined photometry can be used to get distances.  This would be supplemented with spectroscopy as described below.
-
-If LSST WFD does get respectable distances and classifications, our primary interest is value added information from spectroscopy.
-
+\begin{comment}
 \subsection{A New Project}
 The scope of ZTF2 and the coordination of follow-up of LSST discoveries extend beyond the confines
 of current DOE projects.  The recommendations
@@ -183,8 +203,5 @@ refurbishment and use of the
 UH-88 + SNIFS, DESI, 4MOST, a proposed French spectrograph mounted at ESO,
 a network of identical spectrographs (e.g.\ the DESI design) distributed around the world.
 There is expressed interest from South Africa and Australia in using their resources for peculiar-velocity follow-up observations.
+\end{comment}
 
-LBL, through the project, would support a broad community interested in peculiar velocities. 
-There are interested groups at the  University of Hawaii, the University of Michigan, the University of Pittsburgh, the University of Rochester, Yale University,  Brookhaven National Laboratory,
-the Carnegie Observatories, several IN2P3 labs, Humboldt University, the University of Toronto,  the University of Queensland, African Institute for Mathematical
-Sciences.
